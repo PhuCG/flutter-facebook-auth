@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 35
 
     // Conditional for compatibility with AGP <4.2.
     if (project.android.hasProperty("namespace")) {
@@ -30,6 +30,7 @@ android {
     }
     defaultConfig {
         minSdkVersion 21
+        targetSdkVersion 35
     }
     lintOptions {
         disable 'InvalidPackage'
